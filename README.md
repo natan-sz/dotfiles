@@ -8,7 +8,7 @@ Config Files for Linux Mint Cinnamon
 
 * .vimrc
   - html indentation
-  - "<Ctrl>+hjkl" (in insert mode)
+  - "Ctrl+hjkl" (in insert mode)
   - VimPlug : coc, gruvbox, ctrlp
   - leader key movement between buffers
   - autocompleted brackets
