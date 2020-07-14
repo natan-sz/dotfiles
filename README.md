@@ -28,3 +28,9 @@ Config Files for Linux Mint Cinnamon
 * desktop.sh
   - Returns preffered key-bindings
   - Scales the taskbar
+
+## To Do
+  - Configure terminal (desktop.sh)
+  - Automatically Install Vim Plugins
+  - Automatically set background
+  - Automatically download and set theme

@@ -8,3 +8,6 @@ gsettings set org.gnome.metacity.keybindings toggle-tiled-left "['<Super>Left']"
 
 #Setup Taskbar & Scaling
 gsettings set org.cinnamon panels-height "['1:49']"
+
+#Setup Terminal size
+# To Be completed /etc/default/console-setup
