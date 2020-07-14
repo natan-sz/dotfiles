@@ -34,3 +34,6 @@ Config Files for Linux Mint Cinnamon
   - Automatically Install Vim Plugins
   - Automatically set background
   - Automatically download and set theme
+  - Clean up -y and hide waterfall of text
+  - Install Brave
+  - git config file
