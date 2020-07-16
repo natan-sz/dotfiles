@@ -28,3 +28,16 @@ install ranger
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+#NodeJS (Needed for nvim-coc & cool apps)
+curl -sL install-node.now.sh/lts | bash
+  2 sudo apt-get install -y nodejs
+  3 sudo apt-get install gcc g++ make
+
+#Python Packages
+install python3-pip
+pip3 install --upgrade setuptools
+pip3 install numpy
+pip3 install pandas
+pip3 install matplotlib
+pip3 install requests
+pip3 install jedi

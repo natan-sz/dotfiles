@@ -117,3 +117,5 @@ if ! shopt -oq posix; then
 fi
 
 alias vim="nvim"
+alias r="ranger --cmd='set show_hidden true'"
+eval `dircolors /home/natan/.dir_colors`
