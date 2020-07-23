@@ -7,10 +7,6 @@ set nowrap
 set noswapfile
 set incsearch
 
-autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd BufRead,BufNewFile *.htm,*.html let g:user_emmet_expandabbr_key='<Tab>'
-autocmd BufRead,BufNewFile *.htm,*.html imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
-
 inoremap <C-k> <C-o>gk
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
@@ -22,10 +18,19 @@ call plug#begin('~/.vim/plugged')
 	Plug 'ctrlpvim/ctrlp.vim'
 	Plug 'mattn/emmet-vim'
 	Plug 'ambv/black'
+	Plug 'bling/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 colorscheme gruvbox
 set background=dark
+
+let g:airline_theme='base16'
+
+autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd BufRead,BufNewFile *.htm,*.html let g:user_emmet_expandabbr_key='<Tab>'
+autocmd BufRead,BufNewFile *.htm,*.html imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+autocmd FileType html,css EmmetInstall
 
 let mapleader = " "
 
@@ -37,5 +42,6 @@ nnoremap <leader>l :wincmd l<CR>
 inoremap { {}<Left>
 inoremap ( ()<Left>
 inoremap [ []<Left>
+inoremap " ""<Left>
 
 set pyx=3
