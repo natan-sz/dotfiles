@@ -23,6 +23,9 @@ install figlet
 install neovim
 install rofi
 install ranger
+#For Python Dev
+install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
+install python3-venv
 
 #Vim Plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
