@@ -21,6 +21,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'bling/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'tpope/vim-fugitive'
+	Plug 'ap/vim-css-color'
 call plug#end()
 
 colorscheme gruvbox
