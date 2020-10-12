@@ -45,5 +45,6 @@ inoremap { {}<Left>
 inoremap ( ()<Left>
 inoremap [ []<Left>
 inoremap " ""<Left>
+inoremap ' ''<Left>
 
 set pyx=3
