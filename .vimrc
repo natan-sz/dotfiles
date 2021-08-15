@@ -3,9 +3,11 @@ syntax on
 
 set smartindent
 set nu
-set nowrap
 set noswapfile
 set incsearch
+set sts=4 sw=4 ts=4
+set number
+set nowrap
 
 inoremap <C-k> <C-o>gk
 inoremap <C-h> <Left>
