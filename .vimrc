@@ -3,9 +3,11 @@ syntax on
 
 set smartindent
 set nu
-set nowrap
 set noswapfile
 set incsearch
+set sts=4 sw=4 ts=4
+set number
+set nowrap
 
 inoremap <C-k> <C-o>gk
 inoremap <C-h> <Left>
@@ -22,10 +24,14 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'tpope/vim-fugitive'
 	Plug 'ap/vim-css-color'
+	Plug 'folke/zen-mode.nvim'
+	Plug 'preservim/nerdtree'
 call plug#end()
 
 colorscheme gruvbox
 set background=dark
+" Makes Background Transparent
+hi Normal guibg=NONE ctermbg=NONE
 
 let g:airline_theme='base16'
 
@@ -46,5 +52,7 @@ inoremap ( ()<Left>
 inoremap [ []<Left>
 inoremap " ""<Left>
 inoremap ' ''<Left>
+
+map <C-f> :NERDTreeToggle<CR>
 
 set pyx=3
