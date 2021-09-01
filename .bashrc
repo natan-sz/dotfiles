@@ -118,7 +118,7 @@ fi
 
 alias vim="nvim"
 alias r="ranger --cmd='set show_hidden true'"
-eval `dircolors /home/natan/.dir_colors`
+#eval `dircolors /home/natan/.dir_colors`
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
@@ -139,8 +139,17 @@ parse_git_branch() {
 	 git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
  }
  if [ "$color_prompt" = yes ]; then
-	  PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;31m\]$(parse_git_branch)\[\033[00m\]\$ '
+	  PS1='${debian_chroot:+($debian_chroot)}\[\033[01;34m\][\u@\h]\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;31m\]$(parse_git_branch)\[\033[00m\]\$ '
   else
 	   PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(parse_git_branch)\$ '
    fi
    unset color_prompt force_color_prompt
+
+
+# Add openmpi to path
+PATH=$PATH:/usr/local/openmpi-3.0.0/bin
+export PATH
+
+export PATH=$PATH:/home/natan/progs/qe-6.7/bin/
+export PATH=$PATH:/home/natan/progs/xcrysden-1.6.2/
+PATH="$HOME/.local/bin:$PATH"
