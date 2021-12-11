@@ -35,9 +35,9 @@ hi Normal guibg=NONE ctermbg=NONE
 
 let g:airline_theme='base16'
 
-autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd BufRead,BufNewFile *.htm,*.html let g:user_emmet_expandabbr_key='<Tab>'
-autocmd BufRead,BufNewFile *.htm,*.html imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+autocmd BufRead,BufNewFile *.htm,*.html,*.js setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd BufRead,BufNewFile *.htm,*.html,*.js let g:user_emmet_expandabbr_key='<Tab>'
+autocmd BufRead,BufNewFile *.htm,*.html,*.js imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 autocmd FileType html,css EmmetInstall
 
 let mapleader = " "
